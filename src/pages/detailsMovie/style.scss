@@ -1,0 +1,76 @@
+.container_details{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 90vh;
+    max-width: 870px;
+   
+    h1{
+        font-size:1.7rem ;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .img{
+        
+        img{
+            border-radius: 10px;
+            width: 90%;
+        }
+    }
+    .sinopse{
+        margin-top: 10px;
+        p{
+            text-justify: newspaper;
+            font-size:.9rem ;
+            font-weight: 400;
+            padding: 10px;
+            width: 90%;
+        }
+    }
+    
+    .btns{
+        display: inherit;
+        position: relative;
+        left: 5px;
+        top: 15px;
+        gap: 1rem;
+        .btn{
+            border-radius: 5px;
+            cursor: pointer;
+            background: linear-gradient(to right, #c0c0c0 20%, #dcdcdc 80% );
+            transform: scale(0.9);
+            transition: all ease-in-out 0.3s;
+            color: #0009;
+            &:hover{
+                background: linear-gradient(to right, #dcdcdc 20%, #c0c0c0 80% );
+                transform: scale(1);
+            }   
+        }
+    }
+
+}
+
+.loader{
+    background-color: #ddd;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner{
+        height: 60px;
+        width: 60px;
+        border: 5px solid rgba(0,0,0,.1);
+        border-left-color: #09747e;
+        border-radius: 50%;
+        animation: spin 1.5s linear infinite;
+    }
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

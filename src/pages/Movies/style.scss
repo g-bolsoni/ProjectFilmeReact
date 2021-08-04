@@ -1,0 +1,39 @@
+.container_MoviesSaved{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    .MoviesSaved_ul{
+        display: inherit;
+        flex-direction: column;
+
+        .MoviesSaved_li{
+            display: inherit;
+            flex-direction: row;
+          
+            justify-content: space-between;
+            h3{
+                padding: 20px;
+            }
+            .MoviesSaved_buttons{
+                padding: 20px;
+                
+                a{
+                    margin:0 15px 0 0 ;
+                }
+                button{
+                    border-radius: 5px;
+                    cursor: pointer;
+                    background: linear-gradient(to right, #c0c0c0 20%, #dcdcdc 80% );
+                    transform: scale(0.9);
+                    transition: all ease-in-out 0.3s;
+                    color: #0009;
+                    &:hover{
+                        background: linear-gradient(to right, #dcdcdc 20%, #c0c0c0 80% );
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

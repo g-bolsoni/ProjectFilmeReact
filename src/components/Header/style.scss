@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: rgb(243, 27, 27);
+    align-items: center;
+
+    h2{
+        color:rgb(214, 214, 214);
+        cursor: pointer;
+    }
+
+    .btn{
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to right, #c0c0c0 20%, #dcdcdc 80% );
+        transform: scale(0.9);
+        transition: all ease-in-out 0.3s;
+        color: #0009;
+        &:hover{
+            background: linear-gradient(to right, #dcdcdc 20%, #c0c0c0 80% );
+            transform: scale(1);
+        }
+    }
+
+}
